@@ -14,6 +14,15 @@
     "categories": {
       "auth": {
         "testbb4e71d3": {}
+      },
+      "function": {
+        "S3Trigger91aa4800": {
+          "deploymentBucketName": "amplify-test-staging-8fc4f-deployment",
+          "s3Key": "amplify-builds/S3Trigger91aa4800-794f4279565767446b37-build.zip"
+        }
+      },
+      "storage": {
+        "TestS3": {}
       }
     }
   }
