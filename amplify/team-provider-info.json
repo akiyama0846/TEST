@@ -19,10 +19,20 @@
         "S3Trigger91aa4800": {
           "deploymentBucketName": "amplify-test-staging-8fc4f-deployment",
           "s3Key": "amplify-builds/S3Trigger91aa4800-794f4279565767446b37-build.zip"
+        },
+        "test3371a320": {
+          "deploymentBucketName": "amplify-test-staging-8fc4f-deployment",
+          "s3Key": "amplify-builds/test3371a320-6e4236612f665a315676-build.zip",
+          "s3BucketName": "public",
+          "rekognitionConfidenceThreshold": "70",
+          "dummyVariable": "temp"
         }
       },
       "storage": {
         "TestS3": {}
+      },
+      "api": {
+        "testAPI": {}
       }
     }
   }

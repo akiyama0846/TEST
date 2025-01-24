@@ -1,4 +1,22 @@
 {
+  "api": {
+    "testAPI": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
   "auth": {
     "testbb4e71d3": {
       "customAuth": false,
@@ -30,6 +48,20 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "test3371a320": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "BucketName"
+          ],
+          "category": "storage",
+          "resourceName": "TestS3"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "parameters": {
@@ -46,6 +78,46 @@
         {
           "category": "function",
           "resourceName": "S3Trigger91aa4800"
+        }
+      ]
+    },
+    "AMPLIFY_function_test3371a320_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "test3371a320"
+        }
+      ]
+    },
+    "AMPLIFY_function_test3371a320_dummyVariable": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "test3371a320"
+        }
+      ]
+    },
+    "AMPLIFY_function_test3371a320_rekognitionConfidenceThreshold": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "test3371a320"
+        }
+      ]
+    },
+    "AMPLIFY_function_test3371a320_s3BucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "test3371a320"
+        }
+      ]
+    },
+    "AMPLIFY_function_test3371a320_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "test3371a320"
         }
       ]
     }

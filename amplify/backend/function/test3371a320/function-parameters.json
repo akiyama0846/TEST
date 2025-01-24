@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "storage": {
+      "TestS3": [
+        "read",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "s3BucketName",
+      "environmentVariableName": "S3_BUCKET_NAME"
+    },
+    {
+      "cloudFormationParameterName": "rekognitionConfidenceThreshold",
+      "environmentVariableName": "REKOGNITION_CONFIDENCE_THRESHOLD"
+    },
+    {
+      "cloudFormationParameterName": "dummyVariable",
+      "environmentVariableName": "DUMMY_VARIABLE"
+    }
+  ]
+}
